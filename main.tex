@@ -1,0 +1,40 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{datetime}
+
+% graphicx
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+% biblatex
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{unsrtnat}
+
+\usepackage[nottoc]{tocbibind}
+
+\title{
+    {A History of Digital Multimedia Formats}
+}
+\author{Mihnea Ungureanu}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Introduction}
+\input{chapters/intro}
+
+\chapter{Background}
+\input{chapters/background}
+
+\chapter{Evolution}
+\input{chapters/evolution}
+
+\chapter{Conclusion}
+\input{chapters/conclusion}
+
+\bibliography{references}
+
+\end{document}
